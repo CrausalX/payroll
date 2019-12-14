@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Beranda | Payroll - PT. DKM</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+
+    <body data-ma-theme="green">
+        <main class="main main--alt">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="header__logo">
+
+                    <ul class="top-nav">
+                        <li class="hidden-xl-up"><a href="" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+    
+                        <li>
+                            <div class="user__info" data-toggle="">
+                                <img class="user__img" src="img/logo/dkm-white.png" style="border-radius:0">
+                                <a href="index.html">
+                                    <div style="font-weight:400;font-size:14px;color:#fff;">PT. DKM</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="search">
+                    <div class="search__inner">
+                        <input type="text" class="search__text" placeholder="Cari pengguna...">
+                        <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                    </div>
+                </form>
+
+                <ul class="top-nav">
+                    <li class="hidden-xl-up"><a href="" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+
+                    <li class="dropdown">
+                        <div>
+                            <div class="user__info" data-toggle="dropdown">
+                                <img class="user__img" src="demo/img/profile-pics/8.jpg" alt="">
+                                <div>
+                                    <div><b>Malinda Hollaway</b></div>
+                                    <div>Admin HRD</div>
+                                </div>
+                            </div>
+    
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="login.html">Keluar</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-menu">
+                    <li class="active"><a href="index.html">Beranda</a></li>
+                    <li><a href="user.html">Pengguna</a></li>
+                    <li><a href="salary.html">Gaji</a></li>
+                    <!-- <li class="dropdown">
+                        <a href="" data-toggle="dropdown">Level 1</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Level 2</a>
+                        </div>
+                    </li> -->
+                </ul>
+            </header>
+
+            <section class="content content--full">
+                <div class="content__inner">
+                    <header class="content__title">
+                        <h1>Beranda</h1>
+                        <small>
+                            Selamat datang Admin HRD, Malinda Hollaway
+                        </small>
+                    </header>
+
+                    <div class="row quick-stats">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="quick-stats__item bg-blue">
+                                <div class="quick-stats__info">
+                                    <h2>1.040</h2>
+                                    <small>Total Pengguna</small>
+                                </div>
+
+                                <div class="quick-stats__chart sparkline-bar-stats">6,4,8,6,5,6,7,8,3,5,9,5</div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <div class="quick-stats__item bg-amber">
+                                <div class="quick-stats__info">
+                                    <h2>580</h2>
+                                    <small>Pengguna Aktif</small>
+                                </div>
+
+                                <div class="quick-stats__chart sparkline-bar-stats">7,8,6,4,6,7,5,7,9,3,6,5</div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <div class="quick-stats__item bg-purple">
+                                <div class="quick-stats__info">
+                                    <h2>460</h2>
+                                    <small>Pengguna Non-Aktif</small>
+                                </div>
+
+                                <div class="quick-stats__chart sparkline-bar-stats">9,4,6,5,6,4,5,7,9,3,6,5</div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3">
+                            <div class="quick-stats__item bg-red">
+                                <div class="quick-stats__info">
+                                    <h2>350</h2>
+                                    <small>Pengguna Login</small>
+                                </div>
+
+                                <div class="quick-stats__chart sparkline-bar-stats">5,6,3,9,7,5,4,6,5,6,4,9</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pengguna Login</h4>
+                                    <h6 class="card-subtitle">Data di tampilkan untuk hari ini dan kemarin</h6>
+
+                                    <div class="flot-chart flot-line"></div>
+                                    <div class="flot-chart-legends flot-chart-legends--line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="footer">
+                        <p>© Toko Toko-an. All rights reserved.</p>
+                    </footer>
+                </div>
+            </section>
+        </main>
+
+        <!-- Javascript -->
+        <!-- ../vendors -->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/popper.js/popper.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+        <script src="vendors/flot/jquery.flot.js"></script>
+        <script src="vendors/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="vendors/salvattore/salvattore.min.js"></script>
+        <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+
+        <!-- Charts and maps-->
+        <script src="demo/js/flot-charts/curved-line.js"></script>
+        <script src="demo/js/flot-charts/line.js"></script>
+        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+        <script src="demo/js/other-charts.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

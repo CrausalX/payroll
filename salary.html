@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Gaji | Payroll - PT. DKM</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+
+    <body data-ma-theme="green">
+        <main class="main main--alt">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="header__logo">
+
+                    <ul class="top-nav">
+                        <li class="hidden-xl-up"><a href="" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+    
+                        <li>
+                            <div class="user__info" data-toggle="">
+                                <img class="user__img" src="img/logo/dkm-white.png" style="border-radius:0">
+                                <a href="index.html">
+                                    <div style="font-weight:400;font-size:14px;color:#fff;">PT. DKM</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="search">
+                    <div class="search__inner">
+                        <input type="text" class="search__text" placeholder="Cari pengguna...">
+                        <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                    </div>
+                </form>
+
+                <ul class="top-nav">
+                    <li class="hidden-xl-up"><a href="" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
+
+                    <li class="dropdown">
+                        <div>
+                            <div class="user__info" data-toggle="dropdown">
+                                <img class="user__img" src="demo/img/profile-pics/8.jpg" alt="">
+                                <div>
+                                    <div><b>Malinda Hollaway</b></div>
+                                    <div>Admin HRD</div>
+                                </div>
+                            </div>
+    
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="login.html">Keluar</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="top-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="user.html">Pengguna</a></li class="active">
+                    <li class="active"><a href="salary.html">Gaji</a></li class="active">
+                </ul>
+            </header>
+
+            <section class="content content--full">
+                <div class="content__inner">
+                    <header class="content__title">
+                        <h1>Gaji</h1>
+                    </header>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <button class="btn btn-info btn--icon-text" data-toggle="modal" data-target="#modal-form">
+                                <i class="zmdi zmdi-cloud-upload"></i> Import
+                            </button>
+                            <table id="data-table" class="table table-bordered table-striped">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Periode</th>
+                                        <th>NIK</th>
+                                        <th>Nama Pegawai</th>
+                                        <th>Jabatan</th>
+                                        <th>Gaji Pokok</th>
+                                        <th>Total Bruto</th>
+                                        <th>Take Home Pay</th>
+                                        <th width="100"></th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Periode</th>
+                                        <th>NIK</th>
+                                        <th>Nama Pegawai</th>
+                                        <th>Jabatan</th>
+                                        <th>Gaji Pokok</th>
+                                        <th>Total Bruto</th>
+                                        <th>Take Home Pay</th>
+                                        <th width="100"></th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Desember 2019</td>
+                                        <td>2019004020</td>
+                                        <td>EKA SRI RAHAYU</td>
+                                        <td>SECURITY</td>
+                                        <td>3.650.000</td>
+                                        <td>4.353.556</td>
+                                        <td>3.492.361</td>
+                                        <td align="center">
+                                            <button class="btn btn-sm btn-secondary"><i class="zmdi zmdi-edit"></i></button>
+                                            <button class="btn btn-sm btn-danger"><i class="zmdi zmdi-delete"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Desember 2019</td>
+                                        <td>2018003706</td>
+                                        <td>MEGAWATI</td>
+                                        <td>SECURITY</td>
+                                        <td>3.650.000</td>
+                                        <td>4.353.556</td>
+                                        <td>3.692.361</td>
+                                        <td align="center">
+                                            <button class="btn btn-sm btn-secondary"><i class="zmdi zmdi-edit"></i></button>
+                                            <button class="btn btn-sm btn-danger"><i class="zmdi zmdi-delete"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <footer class="footer">
+                        <p>© PT. DKM - All rights reserved.</p>
+                    </footer>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal: Form -->
+        <div class="modal fade" id="modal-form" data-backdrop="static" data-keyboard="false" tabindex="-1">
+            <div class="modal-dialog modal-xs modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title pull-left">
+                            Import Gaji
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-pendapatan">
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label required>File</label>
+                                        <div class="upload">
+                                            <div class="upload-body">
+                                                <input type="file" class="form-control">
+                                                <div class="label">
+                                                    <span class="zmdi zmdi-upload"></span>
+                                                </div>
+                                            </div>
+                                            <div class="upload-footer">
+                                                <div>
+                                                    <a href="files/template/salary.xlsx"><span class="zmdi zmdi-download"></span> Unduh Template</a>
+                                                </div>
+                                                <span>Nama File: -</span>
+                                                <span>Periode: -</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Upload</button>
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Batal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/popper.js/popper.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+        <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+        <script src="vendors/autosize/autosize.min.js"></script>
+        <script src="vendors/flatpickr/flatpickr.min.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
